@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Contacts:</h1>
+<ul>
+    {% for contact in contacts %}
+    <li style="font-size:30px">{{contact.job}}: {{contact.name}}, Carte d'étudiant: {{contact.stud}}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<h1>Magasins</h1>
+
+<p><img src="{% static 'electronics/images/map.jpg' %}"></p>
+
+<h2 style="color: #9c1924">{{content|linebreaks}}</h2>
+{% endblock %}

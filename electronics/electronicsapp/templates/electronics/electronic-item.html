@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{item.name}}</h1>
+<div style="background: #595853; width: 125px"><h3 style="color: rgb(255, 215, 20)">Prix: {{item.price}}€</h3></div>
+
+{% if item.photo %}
+<p><img class="img-article-left" src="{{ item.photo.url}}" alt=""></p>
+{% endif %}
+
+{{item.content|linebreaks}}
+{% endblock %}
